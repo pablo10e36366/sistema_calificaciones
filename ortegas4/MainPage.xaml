@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ortegas4.MainPage"
+    Title="Sistema de Calificaciones">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15">
+
+            <Label
+                Text="Sistema de Calificaciones"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="Blue"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Instituto Sudamericano"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Picker
+                x:Name="pickerEstudiante"
+                Title="Seleccione un estudiante">
+                <Picker.Items>
+                    <x:String>Pablo Ortega</x:String>
+                    <x:String>Carlos Pérez</x:String>
+                    <x:String>Ana López</x:String>
+                    <x:String>María Torres</x:String>
+                    <x:String>Luis Andrade</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <DatePicker
+                x:Name="dateFecha" />
+
+            <Label Text="Primer Parcial"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+            <Entry
+                x:Name="txtSeguimiento1"
+                Placeholder="Nota Seguimiento 1 sobre 10"
+                Keyboard="Numeric" />
+
+            <Entry
+                x:Name="txtExamen1"
+                Placeholder="Examen 1 sobre 10"
+                Keyboard="Numeric" />
+
+            <Label Text="Segundo Parcial"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+            <Entry
+                x:Name="txtSeguimiento2"
+                Placeholder="Nota Seguimiento 2 sobre 10"
+                Keyboard="Numeric" />
+
+            <Entry
+                x:Name="txtExamen2"
+                Placeholder="Examen 2 sobre 10"
+                Keyboard="Numeric" />
+
+            <Button
+                Text="Calcular Nota Final"
+                BackgroundColor="#007ACC"
+                TextColor="White"
+                HeightRequest="50"
+                Clicked="OnCalcularClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
