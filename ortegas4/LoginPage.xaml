@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ortegas4.LoginPage"
+    Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="18">
+
+            <Label
+                Text="Sistema de Calificaciones"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="Blue"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Inicio de sesión"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtUsuario"
+                Placeholder="Ingrese usuario" />
+
+            <Entry
+                x:Name="txtPassword"
+                Placeholder="Ingrese contraseña"
+                IsPassword="True" />
+
+            <Button
+                Text="Ingresar"
+                BackgroundColor="#007ACC"
+                TextColor="White"
+                HeightRequest="50"
+                Clicked="OnIngresarClicked" />
+
+            <Label
+                Text="Usuarios permitidos: Carlos, Ana, Jose"
+                FontSize="13"
+                TextColor="Gray"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
